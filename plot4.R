@@ -8,7 +8,7 @@ plot4<- function()
         par(mfcol = c(2,2), mar=c(4,4,1,1))
 
         ##creating first graph
-        with(dataofinterest,plot(strptime(paste(Date,Time),format="%d/%m/%Y %H:%M:%S"),Global_active_power, type= "l",ylab="Global Active Power (kilowatts)",xlab=""))
+        with(dataofinterest,plot(strptime(paste(Date,Time),format="%d/%m/%Y %H:%M:%S"),Global_active_power, type= "l",ylab="Global Active Power",xlab=""))
         ## creating 2nd graph in column
         with(dataofinterest,
              {
