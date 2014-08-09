@@ -10,7 +10,7 @@ plot3<- function()
                      plot(strptime(paste(Date,Time),format="%d/%m/%Y %H:%M:%S"),Sub_metering_1, type= "l",ylab="Energy sub metering",xlab="")
                      points(strptime(paste(Date,Time),format="%d/%m/%Y %H:%M:%S"),Sub_metering_2, type= "l",col="Red")
                      points(strptime(paste(Date,Time),format="%d/%m/%Y %H:%M:%S"),Sub_metering_3, type= "l",col="Blue")
-                     legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col=c("Black","Red","Blue"),lty=1,cex = 0.75)
+                     legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col=c("Black","Red","Blue"),lty=1,cex=0.6)
                 })
         
         ## creating .png file
